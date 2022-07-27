@@ -10,6 +10,9 @@ body{
   color:#fff;
 }
 
+html{
+  scroll-behavior:smooth;
+}
 /*-----Header section--------*/
 
 .header{
@@ -365,6 +368,10 @@ form .btn2{
   cursor:pointer;
 }
 
+nav .fa-solid{
+  display:none;
+}
+
 /*----copyright section---*/
 
 .copyright{
@@ -390,5 +397,27 @@ form .btn2{
   }
   .header-text h1{
     font-size:35px;
+  }
+  nav.fa-solid{
+    display:block;
+  }
+  nav ul{
+    background:#ff004f;
+    position:fixed;
+    top:0;
+    right:0;
+    width:200px;
+    height:100vh;
+    padding-top:50px;
+  }
+  nav ul li{
+    display:block;
+    margin:25px;
+  }
+  nav ul.fa-xmark{
+    position:absolute;
+    top:25px;
+    left:25px;
+    cursor:pointer;
   }
 }
